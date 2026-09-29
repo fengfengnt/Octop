@@ -49,6 +49,7 @@ export interface NavSection {
 /** Every nav item key the sidebar can show. Keep in sync with `SIDEBAR_NAV_KEYS` in `octop.infra.users.preferences`. */
 export const SIDEBAR_NAV_KEYS = [
   "chat",
+  "dispatch",
   "experts",
   "tasks",
   "token-usage",
@@ -140,6 +141,12 @@ export function buildNavSections(
           path: "/chat",
           icon: <MessageSquareText size={iconSize} strokeWidth={iconStroke} />,
           labelKey: "nav.chat",
+        },
+        {
+          key: "dispatch",
+          path: "/dispatch",
+          icon: <Waypoints size={iconSize} strokeWidth={iconStroke} />,
+          labelKey: "nav.dispatch",
         },
         {
           key: "experts",

@@ -192,6 +192,7 @@
   },
   "nav": {
     "chat": "Conversation",
+    "dispatch": "Dispatch center",
     "common": "Common",
     "control": "Control",
     "experts": "Experts",
@@ -5915,5 +5916,69 @@
     "updateReady": "A new version is ready",
     "updateNow": "Update now",
     "later": "Later"
+  },
+  "dispatch": {
+    "subtitle": "Requirements, conversations and results in one place",
+    "example": "Example",
+    "demoNotice": "UI demo only. No model, supplier IM, persistence or code execution. Refreshing resets examples.",
+    "create": "New dispatch",
+    "tasks": "Tasks",
+    "chat": "Conversation",
+    "results": "Execution and results",
+    "noTasks": "No dispatch tasks yet",
+    "loadExamples": "Load examples",
+    "empty": "Create a task or load examples to begin",
+    "selectTask": "Select a task to view results",
+    "examples": {
+      "purchase": "Office laptop procurement",
+      "software": "Calendar web app"
+    },
+    "roles": {
+      "purchase": "Procurement manager",
+      "software": "Software engineer"
+    },
+    "statusConfirmed": "Confirmed",
+    "statusDraft": "Awaiting confirmation",
+    "intro": {
+      "purchase": "Describe procurement needs, then confirm the summary before any inquiry.",
+      "software": "Describe the app, then confirm its features before development."
+    },
+    "messages": "Task messages",
+    "requirement": "Requirement summary",
+    "requirements": {
+      "purchase": "Example: procure 10 office laptops; specifications and terms need confirmation.",
+      "software": "Example: a web calendar with month view, event editing and local storage."
+    },
+    "confirmHint": "Example only. Adding a message requires confirmation again.",
+    "confirm": "Confirm example",
+    "confirmed": "Example confirmed",
+    "message": "Requirement message",
+    "messagePlaceholder": "Describe or revise your requirements…",
+    "send": "Add message",
+    "resultHint": "Example content, not an actual execution result.",
+    "waitingConfirmation": "Waiting for confirmation. Nothing has been sent or executed.",
+    "suppliers": "Supplier conversations",
+    "supplier": "Example supplier {{name}}",
+    "notSent": "Not sent",
+    "sampleReply": "Sample reply",
+    "supplierPlaceholder": "Real IM messages will appear here after integration.",
+    "supplierReplyA": "Sample: please confirm specifications and delivery location.",
+    "supplierReplyB": "Sample: please provide warranty period and invoice type.",
+    "quotation": "Quote comparison",
+    "quotationPlaceholder": "No quotes yet.",
+    "quotationExample": "Example: more information is needed; no recommendation yet.",
+    "preview": "Application preview",
+    "previewPlaceholder": "Preview placeholder — no app generated",
+    "previewHint": "A working preview requires the software executor.",
+    "demoStates": "Example states",
+    "showLoading": "Show loading",
+    "showFailure": "Show failure",
+    "showReady": "Restore example",
+    "loading": "Example: loading results…",
+    "failed": "Example: results failed to load",
+    "retry": "Retry example",
+    "taskTitle": "Task title",
+    "titleRequired": "Enter a task title",
+    "role": "Assigned role"
   }
 }

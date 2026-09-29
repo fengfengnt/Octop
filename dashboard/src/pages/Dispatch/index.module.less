@@ -1,0 +1,157 @@
+.notice {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+  color: var(--fn-text-secondary);
+  font-size: 12px;
+}
+.workspace {
+  display: grid;
+  grid-template-columns: minmax(170px, 0.7fr) minmax(280px, 1.5fr) minmax(
+      230px,
+      1fr
+    );
+  gap: 20px;
+  flex: 1;
+  min-height: 0;
+}
+.panel {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  h2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    margin: 0 0 16px;
+  }
+  h3 {
+    font-size: 13px;
+    margin: 20px 0 12px;
+  }
+}
+.chat,
+.results {
+  border-left: 1px solid var(--fn-border-primary);
+  padding-left: 20px;
+}
+.scroll {
+  flex: 1;
+  overflow: auto;
+  min-height: 0;
+  overflow-wrap: anywhere;
+}
+.task {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 8px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--fn-text-primary);
+  text-align: left;
+  cursor: pointer;
+  span,
+  small {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  small {
+    margin-top: 8px;
+    color: var(--fn-text-secondary);
+  }
+  &[aria-pressed="true"] {
+    background: var(--fn-bg-selected);
+    border-color: var(--fn-color-brand-border);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--fn-border-focus);
+  }
+}
+.intro {
+  padding: 16px;
+  background: var(--fn-bg-secondary);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  p {
+    margin: 8px 0 0;
+    line-height: 1.7;
+  }
+}
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.message {
+  align-self: flex-end;
+  max-width: 90%;
+  padding: 12px 16px;
+  background: var(--fn-bg-active);
+  border-radius: 12px;
+  white-space: pre-wrap;
+}
+.composer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  border-top: 1px solid var(--fn-border-primary);
+  padding-top: 12px;
+  margin-top: 16px;
+}
+.meta {
+  color: var(--fn-text-secondary);
+  font-size: 12px;
+  line-height: 1.7;
+}
+.preview {
+  padding: 32px 16px;
+  text-align: center;
+  border: 1px dashed var(--fn-border-input);
+  border-radius: 8px;
+  color: var(--fn-text-secondary);
+}
+.empty {
+  text-align: center;
+  padding: 24px;
+}
+.demo {
+  border-top: 1px solid var(--fn-border-primary);
+  margin-top: 16px;
+  padding-top: 12px;
+  summary {
+    cursor: pointer;
+    margin-bottom: 8px;
+  }
+  button {
+    margin: 4px;
+  }
+}
+.switcher {
+  display: none;
+}
+@media (max-width: 1100px) {
+  .switcher {
+    display: block;
+    margin-bottom: 16px;
+  }
+  .workspace {
+    display: flex;
+  }
+  .panel {
+    display: none;
+    flex: 1;
+    border: 0;
+    padding: 0;
+  }
+  .workspace[data-pane="tasks"] .tasks,
+  .workspace[data-pane="chat"] .chat,
+  .workspace[data-pane="results"] .results {
+    display: flex;
+  }
+}
